@@ -1,0 +1,130 @@
+body {
+    font-family: sans-serif;
+    background-color: #fefefe;
+    margin: 0 10px 30px 10px;
+    max-width: 450px;
+}
+
+hr{
+    align-items: center;
+    margin-left: 0px;
+    border: none;
+    background-color: #2d8ba4;
+    height: 3px;
+    border-radius: 3px;
+}
+
+
+h1{
+    text-align: center;
+    color: #1d6d83;
+}
+
+.question{
+    padding-bottom: 20px;
+    border-bottom: dotted 2px #333;
+    margin-left: 5px;
+}
+
+.question p{
+    margin: 20px 0px 3px 0px;
+}
+
+.radio{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+#pinpon{
+    text-align: center;
+    font-size: 14px;
+    color: #FFF;
+    padding: 10px;
+    margin: 25px auto 5px;
+    display: block;
+    border-radius: 10px; 
+    border: none;  
+    background-color: #2d8ba4;
+}
+
+#chushaku{
+    display: none;
+    text-align: center;
+    color: #a74d4d;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 3px;
+    white-space: pre-line;
+}
+
+#rule{
+    text-align: left;
+    font-size: 14px;
+    color: #111;
+    padding-left: 20px;
+    margin-top: 3px;
+}
+
+#midashi{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    color: #0b4150;
+    margin: 10px auto 10px auto;
+}
+
+.success{
+    display: none;
+}
+
+#barn{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#wall{
+    display: block;
+    width: 75%;
+    margin: 20px auto 5px auto;
+}
+ 
+#wallHelp{
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    margin: 0 0 15px 0;
+}
+ 
+#wallFallback{
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin: 10px auto 15px auto;
+}
+ 
+#wallFallback a{
+    color: #1d6d83;
+    font-weight: bold;
+}
+ 
+#shiyou{
+    background-color: #d8eef4;
+    border: #2d8ba4 solid 2px;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 200px;
+    margin: auto;
+}
+
+#shiyou:disabled{
+    background-color: #ddd;
+    border-color: #999;
+    color: #666;
+}

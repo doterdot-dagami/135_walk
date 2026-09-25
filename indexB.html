@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ウォークラリー</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // 画像より先に読み込まれるよう、ここで定義しておく
+        function handleWallError() {
+            var img = document.getElementById("wall");
+            var fallback = document.getElementById("wallFallback");
+            var help = document.getElementById("wallHelp");
+            if (img) img.style.display = "none";
+            if (help) help.style.display = "none";
+            if (fallback) fallback.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    
+    <h1>ウォークラリー</h1>
+
+    <div class="form">
+        
+        <p>
+            ようこそ135Festivalへ！<br>
+            会場を巡るウォークラリー企画です。
+        </p>
+
+        <hr>
+            <p id="midashi">〜ご確認ください〜</p>
+            <ul id="rule">
+                <li>プライベートモードでの操作はお控えください。</li>
+                <li>タブを閉じてしまった場合でも、各ポイントに掲示する問題用紙のQRコードを再度読み取っていただければ、復帰が可能です。</li>
+                <li>不正行為またはこれに準ずる行為を禁じます。</li>
+            </ul>
+        <hr>
+
+        <div class="question">
+            <p>第１問</p>
+            <div class="radio">
+                <label><input type="radio" name="ichi" value="1">1</input></label>
+                <label><input type="radio" name="ichi" value="2">2</input></label>
+                <label><input type="radio" name="ichi" value="3">3</input></label>
+                <label><input type="radio" name="ichi" value="4">4</input></label>
+            </div>
+        </div>
+
+        
+        <div class="question">
+            <p>第２問</p>
+            <div class="radio">
+                <label><input type="radio" name="ni" value="1">1</input></label>
+                <label><input type="radio" name="ni" value="2">2</input></label>
+                <label><input type="radio" name="ni" value="3">3</input></label>
+                <label><input type="radio" name="ni" value="4">4</input></label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>第３問</p>
+            <div class="radio">
+                <label><input type="radio" name="san" value="1">1</input></label>
+                <label><input type="radio" name="san" value="2">2</input></label>
+                <label><input type="radio" name="san" value="3">3</input></label>
+                <label><input type="radio" name="san" value="4">4</input></label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>第４問</p>
+            <div class="radio">
+                <label><input type="radio" name="shi" value="1">1</input></label>
+                <label><input type="radio" name="shi" value="2">2</input></label>
+                <label><input type="radio" name="shi" value="3">3</input></label>
+                <label><input type="radio" name="shi" value="4">4</input></label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>第５問</p>
+            <div class="radio">
+                <label><input type="radio" name="go" value="1">1</input></label>
+                <label><input type="radio" name="go" value="2">2</input></label>
+                <label><input type="radio" name="go" value="3">3</input></label>
+                <label><input type="radio" name="go" value="4">4</input></label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>第６問</p>
+            <div class="radio">
+                <label><input type="radio" name="roku" value="1">1</input></label>
+                <label><input type="radio" name="roku" value="2">2</input></label>
+                <label><input type="radio" name="roku" value="3">3</input></label>
+                <label><input type="radio" name="roku" value="4">4</input></label>
+            </div>
+        </div>
+        
+        <div class="question">
+            <p>第７問</p>
+            <div class="radio">
+                <label><input type="radio" name="nana" value="1">1</input></label>
+                <label><input type="radio" name="nana" value="2">2</input></label>
+                <label><input type="radio" name="nana" value="3">3</input></label>
+                <label><input type="radio" name="nana" value="4">4</input></label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>第８問</p>
+            <div class="radio">
+                <label><input type="radio" name="hachi" value="1">1</input></label>
+                <label><input type="radio" name="hachi" value="2">2</input></label>
+                <label><input type="radio" name="hachi" value="3">3</input></label>
+                <label><input type="radio" name="hachi" value="4">4</input></label>
+            </div>
+        </div>
+
+        <div class="send">
+            <input type="button" id="pinpon" value="回答を送信する"></input>
+            <p id="chushaku">不正解or未回答がある場合に表示</p>
+        </div>
+
+    </div>
+
+    <div class="success">
+        <p>
+            全問正解<br>
+            以下の報酬をゲットしてください
+        </p>
+        <img id="barn" src="barn.png" alt="画像が読み込めない場合でもこの画面をご提示ください">
+        <input type="button" id="shiyou" value="企画クーポン未使用">
+        <img id="wall" src="wall.PNG" alt="画像が表示できない方へ" onerror="handleWallError()">
+        <p id="wallHelp">画像を長押しすると保存できます</p>
+        <p id="wallFallback">
+            スマホ壁紙は<a href="wall.PNG" target="_blank" rel="noopener">こちら</a>から保存できます。
+        </p>
+    </div>
+
+    <!-- ▼▼▼ 検証用。本番公開前に必ず削除してください ▼▼▼ -->
+    <button onclick="localStorage.clear(); location.reload();">【検証用】リセット</button>
+    <!-- ▲▲▲ 検証用。本番公開前に必ず削除してください ▲▲▲ -->
+
+    <script src="configB.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
